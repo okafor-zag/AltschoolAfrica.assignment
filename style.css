@@ -66,8 +66,18 @@ section{
   padding:40px;
 }
 
+
+.name p{
+  font-size: 20px;
+}
+
+
+.name h1{
+font-size: 53px;
+}
+
 section .name{
-  margin-top:100px;
+  margin-top:50px;
   margin-left: 100px;
 }
 
@@ -116,10 +126,17 @@ article h1{
     }
 
     section{
-      display: block;
+      display:inline-block;
       padding: 20px;
-      margin-left: 20px;
     }
+
+   section h1{
+     margin-top:20px;
+   }
+
+   section hr{
+     margin-top:20px;
+   }
 
     section .name{
         margin-top:100px;
@@ -128,7 +145,17 @@ article h1{
     section img{
       width:300px;
       margin-top:20px;
-     }
+    }
+
+      
+  .name p{
+    font-size: 20px;
+}
+
+
+.name h1{
+  font-size: 43px;
+}
 
      article{
        display:block;
@@ -173,14 +200,6 @@ article h1{
 
 
 
-  .name p{
-      font-size: 20px;
-  }
-
-
-.name h1{
-    font-size: 53px;
-}
 
   article{
     background-image:
