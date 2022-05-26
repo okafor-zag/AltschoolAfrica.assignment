@@ -18,6 +18,10 @@
     background-repeat: no-repeat;
       text-align: center;
       opacity: 0.5;
+  }
+
+  @media (min-width: 769px) {
+    header{
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -25,39 +29,127 @@
       height: 70px;
   }
 
+  
+  header nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    color: white;
+    width: 100%;
+}
+
+.login-section ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+  color: white;
+  width: 100%;
+}
+
+header nav ul #about{
+  background-color: rgba(4, 4, 24, 0.712);
+  border-radius: 25px;
+}
+
+ul #login{
+  background-color: rgba(255, 255, 255, 0.529);
+  border-radius: 25px;
+}
+
+section{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin:40px 40px 0 10px;
+  padding:40px;
+}
+
+section img{
+  width:300px;
+}
+
+article{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+article h1{
+  font-size: 30px;
+  margin-bottom:10px;
+  font-weight: bold;
+}
+    }
+
+    /*phone responsive*/
+
+  @media (max-width: 768px) {
+    header nav {
+      display: block;
+      border-radius: 2px;
+      width: 100%;
+    }
+
+    .login-section ul{
+      display: flex;
+      flex-direction: row;
+    }
+
+    header nav ul #about{
+      background-color: rgba(4, 4, 24, 0.712);
+      border-radius: 8px;
+    }
+
+    ul #login a{
+    color: black;
+    }
+
+    ul #login{
+    border-radius:8px;
+    background-color: rgba(255, 255, 255, 0.529);
+    }
+
+    section{
+      display: block;
+
+    }
+
+    section img{
+      width:300px;
+      margin-top:100px;
+      margin-left: 100px;
+      margin-bottom: 20px;
+     }
+
+     article{
+       display:block;
+       padding-top: 20px;
+       padding-bottom: 20px;
+     }
+     article h1{
+      font-size: 30px;
+      margin-bottom:10px;
+      margin-top:10px;
+      font-weight: bold;
+    }
+  }
+/* normal */
+
   button{
       text-decoration: none;
   }
 
-  header nav ul{
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      list-style: none;
-      color: white;
-      width: 100%;
-  }
 
-  .login-section ul{
-      display: flex;
-      flex-direction: row;
-    justify-content: space-between;
-    list-style: none;
-    color: white;
-    width: 100%;
-  }
+
 
   header ul li{
       margin:12px 10px 10px 10px;
-      padding:7px 25px;
+      padding:5px 25px;
   }
 
 
-  ul #login{
-      background-color: rgba(255, 255, 255, 0.529);
-      border-radius: 25px;
-  }
+
 
   header ul li a{
       text-decoration: none;
@@ -70,18 +162,6 @@
       border-radius: 25px;
   }
 
-  header nav ul #about{
-    background-color: rgba(4, 4, 24, 0.712);
-    border-radius: 35px;
-}
-
-
-  section{
-      display: grid;
-      grid-template-columns: 2fr 1fr;
-      margin:40px 40px 0 10px;
-      padding:40px;
-  }
 
   section .name{
       margin-top:100px;
@@ -97,10 +177,6 @@
     font-size: 53px;
 }
 
-  section img{
-      width:300px;
-  }
-
   article{
     background-image:
     linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(32, 29, 31, 0)), url(images/Site\ owner\ using\ the\ CSS\ background\ position\ property.webp);
@@ -108,8 +184,6 @@
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
   }
 
   article .article{
@@ -119,21 +193,15 @@ hr{
     width:95%;
 }
 
-#icon-text .icon{
-    display:flex;
-    flex-direction: column;
-    justify-content: flex;
-
-}
 
 
 .fa {
     padding: 20px;
-    width: 100px;
+    width: 60px;
     text-align: center;
     text-decoration: none;
-    margin: 5px 2px;
-    border-radius: 12px;
+    margin: 9px 5px;
+    border-radius: 50%;
   }
   
   .fa:hover {
