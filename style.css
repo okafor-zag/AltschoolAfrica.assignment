@@ -66,6 +66,11 @@ section{
   padding:40px;
 }
 
+section .name{
+  margin-top:100px;
+  margin-left: 100px;
+}
+
 section img{
   width:300px;
 }
@@ -112,14 +117,17 @@ article h1{
 
     section{
       display: block;
+      padding: 20px;
+      margin-left: 20px;
+    }
 
+    section .name{
+        margin-top:100px;
     }
 
     section img{
       width:300px;
-      margin-top:100px;
-      margin-left: 100px;
-      margin-bottom: 20px;
+      margin-top:20px;
      }
 
      article{
@@ -163,10 +171,7 @@ article h1{
   }
 
 
-  section .name{
-      margin-top:100px;
-      margin-left: 100px;
-  }
+
 
   .name p{
       font-size: 20px;
