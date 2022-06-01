@@ -146,10 +146,7 @@ button:hover{
         right: 0;
       }
 
-      .nav span{
-        color: rgba(255, 255, 255, 0.878);
-      }
-
+    
       .nav button{
         width:60px;
         height:40px;
@@ -162,6 +159,12 @@ button:hover{
       color: black;
       font-size: 10px;;
     }
+
+    .nav span{
+      color: rgba(255, 255, 255, 0.878);
+      font-size: 14px;
+    }
+
 
     .back a{
       position: fixed;
