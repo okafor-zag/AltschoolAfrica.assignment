@@ -134,6 +134,10 @@ button:hover{
     margin: 10px 15px;
 }
 
+form label, p{
+  color:#fff;
+}
+
 .nav button a{
   text-decoration: none;
   color: black;

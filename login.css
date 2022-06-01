@@ -47,11 +47,6 @@ button:hover{
     margin-top: 12px;
   }
 
-  form p a{
-    text-decoration: none;
-    color: black;
-  }
-
   form hr{
     margin-top: 8px;
   }
@@ -104,6 +99,11 @@ button:hover{
       color: black;
     }
 
+    form p a{
+      text-decoration: none;
+      color: black;
+    }
+
     .back a{
       position: fixed;
       top: 0;
@@ -140,6 +140,11 @@ button:hover{
         color:#fff;
       }
 
+      form p a{
+        text-decoration: none;
+        color: #fff;
+      }
+
       .nav{
         position: fixed;
         top: 0;
@@ -163,6 +168,10 @@ button:hover{
     .nav span{
       color: rgba(255, 255, 255, 0.878);
       font-size: 14px;
+    }
+
+    form label, p{
+      color:#fff;
     }
 
 
