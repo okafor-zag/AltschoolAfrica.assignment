@@ -11,18 +11,6 @@
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
   }
 
-  .back a{
-    position: fixed;
-    top: 0;
-    left: 0;
-    text-decoration: none;
-    color: #fff;
-    background-color: rgba(0, 0, 0, 0.197);
-    width: 150px;
-    height: 50px;
-    padding: 14px;
-  }
-
   #contact{
     background-image:
     linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(32, 29, 31, 0)), url(images/Site\ owner\ using\ the\ CSS\ background\ position\ property.webp);
@@ -31,33 +19,6 @@
     background-position: center;
     background-attachment: fixed;
   }
-
-  form{
-    display:inline-block;
-      margin:30px 80px 30px 0;
-      width:350px;
-      padding: 17px;
-      background-color:white;
-      box-shadow: 20px 20px 20px 0px rgba(0,0,0,0.7);
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      height: 350px;
-      margin-top: -150px;
-      margin-left: -200px
-    }
-    
-
-input {
-  width:100%;
-  padding: 15px;
-  margin:5px 0 18px 0;
-  display: inline-block;
-  border:none;
-  background:whitesmoke;
-  border: 2px solid #ccc;
-}
-
 
 form button{
    background: rgba(114, 114, 135, 0.476);
@@ -82,27 +43,6 @@ button:hover{
       opacity: 0.7;
   }
 
-  .nav{
-    position: fixed;
-    top: 0;
-    right: 0;
-  }
-  .nav span{
-    color: rgba(255, 255, 255, 0.878);
-  }
-
-  .nav button{
-      width:80px;
-      height:40px;
-      border-radius: 10px;
-      margin: 10px 15px;
-  }
-
-  .nav button a{
-    text-decoration: none;
-    color: black;
-  }
-
   form p{
     margin-top: 12px;
   }
@@ -115,3 +55,124 @@ button:hover{
   form hr{
     margin-top: 8px;
   }
+
+  /*big screen*/
+
+  @media (min-width: 621px) {
+    form{
+      display:inline-block;
+        width:350px;
+        padding: 17px;
+        background-color:white;
+        box-shadow: 20px 20px 20px 0px rgba(0,0,0,0.7);
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        height: 350px;
+        margin-top: -150px;
+        margin-left: -200px
+      }
+
+      input {
+        width:100%;
+        padding: 15px;
+        margin:5px 0 18px 0;
+        display: inline-block;
+        border:none;
+        background:whitesmoke;
+        border: 2px solid #ccc;
+      }
+
+      .nav{
+        position: fixed;
+        top: 0;
+        right: 0;
+      }
+      .nav span{
+        color: rgba(255, 255, 255, 0.878);
+      }
+
+      .nav button{
+        width:80px;
+        height:40px;
+        border-radius: 10px;
+        margin: 10px 15px;
+    }
+  
+    .nav button a{
+      text-decoration: none;
+      color: black;
+    }
+
+    .back a{
+      position: fixed;
+      top: 0;
+      left: 0;
+      text-decoration: none;
+      color: #fff;
+      background-color: rgba(0, 0, 0, 0.197);
+      width: 150px;
+      height: 50px;
+      padding: 14px;
+    }
+  }
+
+  /*small screen*/
+
+  @media (max-width:620px) {
+    form{
+      margin:100px auto 0 auto;
+        width:350px;
+        padding: 17px;
+      }
+
+      input {
+        width:100%;
+        padding: 15px;
+        margin:5px 0 18px 0;
+        display: inline-block;
+        border:none;
+        background:rgba(245, 245, 245, 0);
+        border: 2px solid #ccc;
+      }
+
+      input::placeholder {
+        color:#fff;
+      }
+
+      .nav{
+        position: fixed;
+        top: 0;
+        right: 0;
+      }
+
+      .nav span{
+        color: rgba(255, 255, 255, 0.878);
+      }
+
+      .nav button{
+        width:60px;
+        height:40px;
+        border-radius: 10px;
+        margin: 5px 2px;
+    }
+  
+    .nav button a{
+      text-decoration: none;
+      color: black;
+      font-size: 10px;;
+    }
+
+    .back a{
+      position: fixed;
+      top: 0;
+      left: 0;
+      text-decoration: none;
+      color: #fff;
+      width: 100px;
+      height: 40px;
+      padding: 10px;
+      font-size: 10px;
+      background-color: rgba(0, 0, 0, 0.197);
+    }
+  } 
