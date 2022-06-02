@@ -11,21 +11,7 @@ body{
     background-attachment: fixed;
 }
 
-.back a{
-    position: fixed;
-    top: 0;
-    left: 0;
-    text-decoration: none;
-    color: #fff;
-    background-color: rgba(0, 0, 0, 0.197);
-    width: 150px;
-    height: 50px;
-    padding: 14px;
-  }
 
-  .back:hover{
-    opacity: 0.7;
-}
 
 main{
     margin: 1rem;
@@ -94,23 +80,88 @@ td button{
     border-radius: 1rem;
 }
 
-.nav{
-    position: fixed;
-    top: 0;
-    right: 0;
-  }
-  .nav span{
-    color: rgba(255, 255, 255, 0.878);
+
+  /* large device */
+
+  @media (min-width: 621px) {
+    .back a{
+        position: fixed;
+        top: 0;
+        left: 0;
+        text-decoration: none;
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.197);
+        width: 150px;
+        height: 50px;
+        padding: 14px;
+      }
+    
+      .back:hover{
+        opacity: 0.7;
+    }
+
+    .nav{
+        position: fixed;
+        top: 0;
+        right: 0;
+      }
+      .nav span{
+        color: rgba(255, 255, 255, 0.878);
+      }
+    
+      .nav button{
+          width:80px;
+          height:40px;
+          border-radius: 10px;
+          margin: 10px 15px;
+      }
+    
+      .nav button a{
+        text-decoration: none;
+        color: black;
+      }
   }
 
-  .nav button{
-      width:80px;
-      height:40px;
-      border-radius: 10px;
-      margin: 10px 15px;
-  }
+  /* small screen*/
 
-  .nav button a{
-    text-decoration: none;
-    color: black;
+  @media (max-width:620px) {
+    .back a{
+        position: fixed;
+        top: 0;
+        left: 0;
+        text-decoration: none;
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.197);
+        width: 150px;
+        height: 40px;
+        padding: 10px;
+        font-size:13px;
+      }
+    
+      .back:hover{
+        opacity: 0.7;
+    }
+
+    .nav{
+        position: fixed;
+        top: 0;
+        right: 0;
+      }
+      .nav span{
+          font-size: 13px;
+        color: rgba(255, 255, 255, 0.878);
+      }
+    
+      .nav button{
+          width:66px;
+          height:35px;
+          border-radius: 10px;
+          margin: 3px 2px;
+      }
+    
+      .nav button a{
+        text-decoration: none;
+        color: black;
+        font-size:11px;
+      }
   }
