@@ -20,21 +20,7 @@
     background-attachment: fixed;
   }
 
-  .back a{
-    position: fixed;
-    top: 0;
-    left: 0;
-    text-decoration: none;
-    color: #fff;
-    background-color: rgba(0, 0, 0, 0.197);
-    width: 150px;
-    height: 50px;
-    padding: 14px;
-  }
 
-  .back:hover{
-      opacity: 0.7;
-  }
 
 
 @media (min-width: 769px) {
@@ -66,6 +52,43 @@ input, select {
   background:whitesmoke;
   border: 2px solid #ccc;
 }
+
+.back a{
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-decoration: none;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.197);
+  width: 150px;
+  height: 50px;
+  padding: 14px;
+}
+
+.back:hover{
+    opacity: 0.7;
+}
+
+.nav{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.nav span{
+  color: rgba(255, 255, 255, 0.878);
+}
+
+.nav button{
+    width:80px;
+    height:40px;
+    border-radius: 10px;
+    margin: 10px 15px;
+}
+
+.nav button a{
+  text-decoration: none;
+  color: black;
+}
 }
 
 @media (max-width: 768px) {
@@ -86,6 +109,46 @@ input, select {
   border:none;
   background:rgba(245, 245, 245, 0);
   border: 2px solid #ccc;
+}
+
+.back a{
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-decoration: none;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.197);
+  width: 150px;
+  height: 40px;
+  padding: 10px;
+  font-size: 13px;
+}
+
+.back:hover{
+    opacity: 0.7;
+}
+
+.nav{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.nav span{
+  font-size:13px;
+  color: rgba(255, 255, 255, 0.878);
+}
+
+.nav button{
+    width:66px;
+    height:35px;
+    border-radius: 10px;
+    margin: 3px 2px;
+}
+
+.nav button a{
+  text-decoration: none;
+  color: black;
+  font-size:11px;
 }
 }
 
@@ -117,28 +180,8 @@ button:hover{
  .form-hor button{
      margin-top: 4rem 0;
  }
- 
- .nav{
-  position: fixed;
-  top: 0;
-  right: 0;
-}
-.nav span{
-  color: rgba(255, 255, 255, 0.878);
-}
-
-.nav button{
-    width:80px;
-    height:40px;
-    border-radius: 10px;
-    margin: 10px 15px;
-}
 
 form label, p{
   color:#fff;
 }
 
-.nav button a{
-  text-decoration: none;
-  color: black;
-}

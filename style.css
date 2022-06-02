@@ -20,7 +20,7 @@
       opacity: 0.5;
   }
 
-  @media (min-width: 769px) {
+  @media (min-width: 691px) {
     header{
       display: flex;
       flex-direction: row;
@@ -99,7 +99,7 @@ article h1{
 
     /*phone responsive*/
 
-  @media (max-width: 768px) {
+  @media (max-width: 690px) {
     header nav {
       display: block;
       border-radius: 2px;
