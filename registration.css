@@ -150,6 +150,14 @@ input, select {
   color: black;
   font-size:11px;
 }
+
+form label, p{
+  color:#fff;
+}
+
+input::placeholder{
+  color:#fff;
+}
 }
 
 form button{
@@ -166,10 +174,6 @@ form button{
    font-weight: bold;
 }
 
-input::placeholder{
-  color:#fff;
-}
-
 button:hover{
     cursor: pointer;
     opacity: 0.8;
@@ -181,7 +185,5 @@ button:hover{
      margin-top: 4rem 0;
  }
 
-form label, p{
-  color:#fff;
-}
+
 
